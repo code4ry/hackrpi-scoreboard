@@ -75,6 +75,14 @@ navbar h1 {
   border-top: none;
 }
 
+.active-tab{
+  
+}
+
+.active-content {
+  display: block;
+}
+
 .App {
   text-align: center;
 }

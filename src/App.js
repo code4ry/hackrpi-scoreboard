@@ -10,38 +10,55 @@ function App() {
   const likes = 50;
 
   const [toggleState, setToggleState] = useState(1);
+  
 
   const toggleTab = (input) => {
+    setToggleState(input)
     console.log("Current Tab: " + input);
   }
 
   return (
-    <div className="App">
-        <div className="content">
+    <div className="container">
+      <div className = "bloc-tabs">
+        <div
+        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+        onClick={() => toggleTab(1)}>Main Page</div>
+        <div 
+        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+        onClick={() => toggleTab(2)}>Best Hack</div>
+        <div 
+        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+        onClick={() => toggleTab(3)}>2nd Best Hack</div>
+        <div 
+        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+        onClick={() => toggleTab(4)}>Prize Tracks</div>
+      </div>
 
-          <h1>{ title }</h1>
-          <div class="tab">
-            <button class="tablinks" onClick= {() => toggleTab(2)}>Best Hack</button>
-            <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}>
-            <div id="BestHack" class="tabcontent">
-             <h3>Best Hack</h3>
-              <p>Name: Neil</p>
-          </div>
-        </div>
-          </div>
-          <p> Final Results </p>
+      <div className="content-tabs">
+
+        <div className={toggleState === 1 ? "content active-content" : "content"}>
+          <h2>Welcome to the RPI Scoreboard</h2>
+          <hr/>
+          <p>Final Results</p>
           <table>
             <tr>
               <th>Rank </th>
               <th>Name </th>
               <th>Score </th>
             </tr>
-            </table>
+          </table>
+            
         </div>
-        <NavBar />
-        <div className="content">
+        <div className={toggleState === 2 ? "content active-content" : "content"}>
+          <h2>Best Hack</h2>
+          <hr/>
         </div>
-    </div>
+      </div>
+
+
+  </div>
+
+    
   );
 }
 
