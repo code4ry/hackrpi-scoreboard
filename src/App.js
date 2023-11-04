@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import BestHack from './BestHack';
 import { useState } from "react";
 import './table.css'
+import image from './F0r0tPrXsAIt0u6.png'
 
 const prizes = [
   {title: "Best In Patient Safety Tech", name: "A"},
@@ -17,6 +18,7 @@ const prizes = [
   {title: "Best First Time Hack", name: "I"},
   {title: "Ugliest Code Competition...", name: "J"}
 ]
+
 
 
 const Row = (props) => {
@@ -50,7 +52,6 @@ function App() {
   const [toggleState, setToggleState] = useState(1);
 
   const [rows, setRows] = useState(prizes)
-  
 
   const toggleTab = (input) => {
     setToggleState(input)
@@ -81,8 +82,11 @@ function App() {
               className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(3)}>Prize Tracks
             </div>
-      </div>
           </div>
+          <div className="image">
+            <img src={image} alt="HackRPI Image" height = {300} width = {600} />
+          </div>
+        </div>
           
             
         </div>
