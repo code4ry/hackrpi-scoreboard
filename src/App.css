@@ -15,6 +15,11 @@
   border-bottom: 1px solid #f4e9e9;
 }
 
+.tabSpacing{
+  display:flex;
+ flex-direction:row;
+}
+
 navbar h1 {
   color: #f1356d;
 }
@@ -83,6 +88,14 @@ navbar h1 {
   display: block;
 }
 
+.active-tabs {
+  padding-right: 100px;
+}
+
+.tabs {
+  padding-right: 100px;
+}
+
 .App {
   text-align: center;
 }
@@ -105,8 +118,13 @@ navbar h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(px + 2vmin);
   color: white;
+}
+
+.changingFont{
+  font-size: 40px;
+  text-align:center;
 }
 
 .App-link {
