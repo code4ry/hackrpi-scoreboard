@@ -49,10 +49,6 @@ function App() {
           </table>
             
         </div>
-        <div className={toggleState === 2 ? "content active-content" : "content"}>
-          <h2>Best Hack</h2>
-          <hr/>
-        </div>
       </div>
 
 
