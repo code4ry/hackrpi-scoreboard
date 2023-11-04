@@ -110,6 +110,24 @@ function App() {
               onClick={() => toggleTab(3)}>Prize Tracks
             </div>
           </div>
+          <div className="BestHack">
+            <h2>Best Hack</h2>
+            <hr/>
+            <table className="BHtable">
+              <tr>
+                <td>Person 1</td>
+              </tr>
+            </table>
+          </div>
+          <div className="SecondBestHack">
+            <h2>Second Best Hack</h2>
+            <hr/>
+            <table className="BH2table">
+              <tr>
+                <td>Person 2</td>
+              </tr>
+            </table>
+          </div>
 
           
             
