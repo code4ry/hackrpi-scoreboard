@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Lucida", monospace;
   color: #333;
 }
 
@@ -38,6 +38,23 @@ navbar h1 {
   margin: 40px auto;
   padding: 20px;
 }
+
+/* Styles for the best hack scoreboard tables*/
+
+.table, th, td, th {
+  width: 1000px;
+  height: 200px;
+  font-size: 100px;
+}
+
+.BestHack {
+  font-size: 200px;
+}
+
+.SecondBestHack {
+  font-size: 200px;
+}
+
 
 /* Style the tab */
 .tab {

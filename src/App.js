@@ -6,11 +6,12 @@ import { useState } from "react";
 
 
 function App() {
-  const title = "Welcome to the RPI Scoreboard";
-  const likes = 50;
+  
+  
 
   const [toggleState, setToggleState] = useState(1);
   
+
 
   const toggleTab = (input) => {
     setToggleState(input)
@@ -18,6 +19,7 @@ function App() {
   }
 
   return (
+    
     <div className="container">
       <div className = "bloc-tabs">
         <div
@@ -25,13 +27,10 @@ function App() {
         onClick={() => toggleTab(1)}>Main Page</div>
         <div 
         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(2)}>Best Hack</div>
+        onClick={() => toggleTab(2)}>Best Hacks</div>
         <div 
         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(3)}>2nd Best Hack</div>
-        <div 
-        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(4)}>Prize Tracks</div>
+        onClick={() => toggleTab(3)}>Prize Tracks</div>
       </div>
 
       <div className="content-tabs">
@@ -40,20 +39,42 @@ function App() {
           <h2>Welcome to the RPI Scoreboard</h2>
           <hr/>
           <p>Final Results</p>
+          
+            
+        </div>
+
+        <div className={toggleState === 2 ? "content active-content" : "content"}>
+          <h1 id="BestHack">Best Hack</h1>
+          <hr/>
           <table>
             <tr>
-              <th>Rank </th>
-              <th>Name </th>
-              <th>Score </th>
+              <th>Haruto Suzuki</th>
+            </tr>
+          </table>
+
+          <h1 id="SecondBestHack"> Second Best Hack</h1>
+          <hr/>
+          <table>
+            <tr>
+              <th>Neil Prashant</th>
             </tr>
           </table>
             
         </div>
+
+        <div className={toggleState === 3 ? "content active-content" : "content"}>
+          <h2>Prize Tracks</h2>
+          <hr/>
+          <p>Final Results</p>
+          
+        </div>
+
+        
+
       </div>
 
 
   </div>
-
     
   );
 }
