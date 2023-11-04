@@ -9,9 +9,9 @@ table {
     padding: 8px;
   }
   
-  table tr:nth-child(even){background-color: #fff9f9;}
+  table tr:nth-child(){background-color: #c04040;}
   
-  table tr:hover {background-color: #828282;}
+  table tr:hover {background-color: #c04040;}
   
   table th {
     padding-top: 12px;

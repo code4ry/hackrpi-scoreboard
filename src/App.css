@@ -4,10 +4,11 @@
   margin: 0;
   font-family: "Quicksand";
   color: #ffffff;
-  background-color:#616161;
-
 }
 
+body{
+  background-color:#616161;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -99,6 +100,8 @@ navbar h1 {
 .active-tabs {
   margin-top:15px;
   margin-right: 1px;
+  cursor: pointer;
+  background-color: #c04040;
 }
 
 .tabs {
