@@ -101,12 +101,14 @@ navbar h1 {
   margin-top:15px;
   margin-right: 1px;
   cursor: pointer;
-  background-color: #c04040;
+  filter: brightness(100%) !important;
 }
 
 .tabs {
   margin-top:15px;
   margin-left: 10px;
+  cursor: pointer;
+  filter: brightness(80%);
 }
 
 .App {
