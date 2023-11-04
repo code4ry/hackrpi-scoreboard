@@ -132,7 +132,15 @@ function App() {
           </div>
         </div>
           
+        <div className={toggleState === 3 ? "content active-content" : "content"}>
+          <h2>Prize Tracks</h2>
+          <hr/>
+          <p>Final Results</p>
+          <Table data = {rows} />
+        </div>
       </div>
+
+      
 
 
   </div>
