@@ -48,6 +48,33 @@ navbar h1 {
   padding: 20px;
 }
 
+/* Style the Best Hacks page */
+
+.BestHack {
+  margin-top: 50px;
+
+}
+
+.BHtable {
+  margin-top: 10px;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.SecondBestHack {
+  margin-top: 50px;
+}
+
+.BH2table {
+  margin-top: 10px;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  font-size: 100px;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
