@@ -34,17 +34,12 @@ function App() {
             
             <div 
               className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(2)}>Best Hack
+              onClick={() => toggleTab(2)}>Best Hacks
             </div>
 
             <div 
               className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(3)}>2nd Best Hack
-            </div>
-
-            <div 
-              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(4)}>Prize Tracks
+              onClick={() => toggleTab(3)}>Prize Tracks
             </div>
       </div>
           </div>
@@ -53,7 +48,7 @@ function App() {
         </div>
 
         <div className={toggleState === 2 ? "content active-content" : "content"}>
-          <h2 class="changingFont">Best Hack</h2>
+          <h2 class="changingFont">Best Hacks</h2>
           <hr/>
           <div className="tabSpacing">
             <div
@@ -63,17 +58,12 @@ function App() {
             
             <div 
               className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(2)}>Best Hack
+              onClick={() => toggleTab(2)}>Best Hacks
             </div>
 
             <div 
               className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(3)}>2nd Best Hack
-            </div>
-
-            <div 
-              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(4)}>Prize Tracks
+              onClick={() => toggleTab(3)}>Prize Tracks
             </div>
           </div>
 
@@ -83,35 +73,6 @@ function App() {
       </div>
 
       <div className={toggleState === 3 ? "content active-content" : "content"}>
-          <h2 class="changingFont">Second Best Hack</h2>
-          <hr/>
-          <div className="tabSpacing">
-            <div
-              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(1)}>Main Page
-            </div>
-            
-            <div 
-              className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(2)}>Best Hack
-            </div>
-
-            <div 
-              className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(3)}>2nd Best Hack
-            </div>
-
-            <div 
-              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleTab(4)}>Prize Tracks
-            </div>
-          </div>
-
-          
-            
-        </div>
-
-      <div className={toggleState === 4 ? "content active-content" : "content"}>
         <h2 class="changingFont">Prize Tracks</h2>
         <hr/>
         <div className="tabSpacing">
@@ -122,21 +83,14 @@ function App() {
           
           <div 
             className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}>Best Hack
+            onClick={() => toggleTab(2)}>Best Hacks
           </div>
 
           <div 
             className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}>2nd Best Hack
-          </div>
-
-          <div 
-            className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(4)}>Prize Tracks
+            onClick={() => toggleTab(3)}>Prize Tracks
           </div>
         </div>
-
-       
           
       </div>
 
