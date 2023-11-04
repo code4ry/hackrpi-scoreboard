@@ -20,35 +20,124 @@ function App() {
   return (
     <div className="container">
       <div className = "bloc-tabs">
-        <div
-        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(1)}>Main Page</div>
-        <div 
-        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(2)}>Best Hack</div>
-        <div 
-        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(3)}>2nd Best Hack</div>
-        <div 
-        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-        onClick={() => toggleTab(4)}>Prize Tracks</div>
-      </div>
-
+    
       <div className="content-tabs">
 
         <div className={toggleState === 1 ? "content active-content" : "content"}>
-          <h2>Welcome to the RPI Scoreboard</h2>
+          <h2 class="changingFont">Welcome to the RPI Scoreboard</h2>
           <hr/>
-          <p>Final Results</p>
-          <table>
-            <tr>
-              <th>Rank </th>
-              <th>Name </th>
-              <th>Score </th>
-            </tr>
-          </table>
+          <div className="tabSpacing">
+            <div
+              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(1)}>Main Page
+            </div>
+            
+            <div 
+              className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(2)}>Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(3)}>2nd Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(4)}>Prize Tracks
+            </div>
+      </div>
+          </div>
+          
             
         </div>
+
+        <div className={toggleState === 2 ? "content active-content" : "content"}>
+          <h2 class="changingFont">Best Hack</h2>
+          <hr/>
+          <div className="tabSpacing">
+            <div
+              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(1)}>Main Page
+            </div>
+            
+            <div 
+              className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(2)}>Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(3)}>2nd Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(4)}>Prize Tracks
+            </div>
+          </div>
+
+          
+            
+        </div>
+      </div>
+
+      <div className={toggleState === 3 ? "content active-content" : "content"}>
+          <h2 class="changingFont">Second Best Hack</h2>
+          <hr/>
+          <div className="tabSpacing">
+            <div
+              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(1)}>Main Page
+            </div>
+            
+            <div 
+              className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(2)}>Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(3)}>2nd Best Hack
+            </div>
+
+            <div 
+              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggleTab(4)}>Prize Tracks
+            </div>
+          </div>
+
+          
+            
+        </div>
+
+      <div className={toggleState === 4 ? "content active-content" : "content"}>
+        <h2 class="changingFont">Prize Tracks</h2>
+        <hr/>
+        <div className="tabSpacing">
+          <div
+            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(1)}>Main Page
+          </div>
+          
+          <div 
+            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(2)}>Best Hack
+          </div>
+
+          <div 
+            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(3)}>2nd Best Hack
+          </div>
+
+          <div 
+            className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+            onClick={() => toggleTab(4)}>Prize Tracks
+          </div>
+        </div>
+
+       
+          
       </div>
 
 
